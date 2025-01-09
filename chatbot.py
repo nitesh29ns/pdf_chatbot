@@ -3,8 +3,6 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from data_loading import get_embedding_funcation
 
-groq_api_key = "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"
-
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
 
