@@ -2,7 +2,7 @@ langchain
 langchain-community 
 langchain-chroma
 langchain-groq
-pysqlite-binary==0.5.1.3380300
+pysqlite-binary
 pysqlite3
 streamlit
 streamlit-pdf-reader
