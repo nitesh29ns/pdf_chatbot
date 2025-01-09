@@ -2,7 +2,6 @@ langchain
 langchain-community 
 langchain-chroma
 langchain-groq
-pysqlite3-binary
 streamlit
 streamlit-pdf-reader
 langchain-nomic
