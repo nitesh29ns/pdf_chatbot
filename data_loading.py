@@ -4,7 +4,7 @@ if not os.environ.get("NOMIC_API_KEY"):
 from langchain_nomic import NomicEmbeddings  
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from uuid import uuid4
 
 def get_embedding_funcation():
