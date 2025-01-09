@@ -7,13 +7,14 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from uuid import uuid4
 
+# using nomic embeddings
 def get_embedding_funcation():
         embedding = NomicEmbeddings(
             model="nomic-embed-text-v1.5",)
 
         return embedding
 
-
+# converting text into chuncks and vecterised
 class vectordb:
 
     def __init__(self,pdf_path:str, chroma_path:str):
@@ -22,7 +23,8 @@ class vectordb:
             self.chroma_path = chroma_path
         except Exception as e:
             raise e
-        
+    
+    # read the pdf
     def load_documents(self):
         try:
             document_loader = PyPDFLoader(self.pdf_path)
@@ -30,6 +32,7 @@ class vectordb:
         except Exception as e:
             raise e
     
+    # split data into chunks
     def split_documents(self,documents:list):
         try:
             text_splitter = RecursiveCharacterTextSplitter(
@@ -43,7 +46,8 @@ class vectordb:
         
         except Exception as e:
             raise e
-        
+
+    # add data to chroma DB
     def add_to_chroma(self,chunks:list):
         try:
             db = Chroma(
