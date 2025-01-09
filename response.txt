@@ -1,0 +1,58 @@
+q1. minimum age to play
+
+ans1. The minimum age to play MONOPOLY is 8 years old.
+
+
+q2. maximum players
+
+ans. The maximum number of players is 8.
+
+
+q3. what the rules
+
+ans3. Based on the provided context, the rules of the game are as follows:
+
+1. Objective: The objective of the game is to become the wealthiest player through buying, renting, and selling property.
+2. Preparation: Place the board on a table, put Chance and Community Chest cards facedown on their allotted spaces, and each player chooses a token.
+3. Gameplay:
+The player with the highest total on the dice starts the play.
+Players take turns throwing the dice and moving their token the number of spaces indicated.
+The turn passes to the left after each player's turn.
+4. Dice Rolls:
+Only white dice are used to determine doubles.
+If a player rolls doubles, they move their token and can roll again.
+If a player rolls doubles three times in a row, they go to jail.
+If a player rolls a three-of-a-kind (all dice show the same number), they can move anywhere on the board.
+5. Jail:
+A player can get out of jail by:
+Rolling doubles on their next turn.
+Using a "Get Out of Jail Free" card.
+Purchasing a "Get Out of Jail Free" card from another player.
+Paying a $50 fine on their next two turns.
+6. Bank:
+The Bank collects taxes, fines, loans, and interest.
+The Bank never "goes broke" and can issue more money if needed.
+7. Properties:
+Players can buy, sell, and rent properties.
+Players can also buy and sell houses and hotels.
+8. Utilities:
+The sum of all three dice is used to determine the payment for utilities.
+9. Auctions:
+The Bank auctions properties and hands out Title Deed cards.
+10. Token Movement:
+Tokens remain on the spaces occupied and proceed from that point on the player's next turn.
+Two or more tokens can rest on the same space at the same time.
+
+
+q4. summary
+
+ans4. The provided context outlines the rules of the Classic Monopoly game. Here's a summary:
+
+1. Selling Properties: Unimproved properties can be sold to any player for any amount. However, properties with buildings can only be sold after the buildings are sold back to the Bank.
+2. Building and Hotel Sales: Houses and hotels can be sold back to the Bank at half price. Houses must be sold one by one in reverse order, while hotels can be sold all at once or one house at a time.
+3. Mortgages: Unimproved properties can be mortgaged through the Bank. Improved properties must have all buildings sold back to the Bank before being mortgaged. No rent can be collected on mortgaged properties.
+4. Game Objective: The goal is to become the wealthiest player by buying, renting, and selling properties.
+5. Gameplay: Players roll dice to move around the board, following specific rules for Chance and Community Chest spaces, jail, and utility payments.
+6. Rent Collection: Rent can be collected on unmortgaged properties, with higher rents for properties with houses or hotels. The owner must ask for rent before the next player's turn.
+
+Overall, the rules aim to create a strategic and competitive game where players manage their properties, finances, and risks to emerge as the wealthiest player
