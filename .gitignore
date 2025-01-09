@@ -140,6 +140,8 @@ venv.bak/
 # chroma db files
 *_db 
 
+# secrets
+*api_key.txt
 
 # Spyder project settings
 .spyderproject
