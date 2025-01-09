@@ -38,7 +38,7 @@ class ChatBot_output():
         # using graq api
         llm = ChatGroq(
                 temperature=0,
-                groq_api_key=  st.write(st.secrets["GROQ_API_KEY"])),
+                groq_api_key=  st.secrets.GROQ_API_KEY,
                 model_name="llama-3.1-70b-versatile"
             )
 
