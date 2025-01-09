@@ -7,9 +7,12 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from uuid import uuid4
 
-#from langchain.embeddings import HuggingFaceEmbeddings
+def get_embedding_funcation():
+        embedding = NomicEmbeddings(
+            model="nomic-embed-text-v1.5",)
 
-#embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        return embedding
+
 
 class vectordb:
 
@@ -41,17 +44,11 @@ class vectordb:
         except Exception as e:
             raise e
         
-    def get_embedding_funcation(self):
-        embedding = NomicEmbeddings(
-            model="nomic-embed-text-v1.5",)
-
-        return embedding
-
     def add_to_chroma(self,chunks:list):
         try:
             db = Chroma(
                 persist_directory = self.chroma_path,
-                embedding_function = self.get_embedding_funcation() #use this embeddings
+                embedding_function = get_embedding_funcation() 
             )
 
             if len(chunks):
@@ -76,10 +73,10 @@ class vectordb:
             raise e
         
 
-
 """
-dd = vectordb(pdf_path="D:/ml/PDF_RAG_llm/pdf_rag_llm/research/Data/monopoly.pdf",chroma_path="./test1")
+dd = vectordb(pdf_path="D:\ml\PDF_RAG_llm\pdf_chatbot\data\monopoly.pdf",chroma_path="./test1")
 
 d = dd.upload_to_vectordb()
 
-print(d)"""
+print(d)
+"""
