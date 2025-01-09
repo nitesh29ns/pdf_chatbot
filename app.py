@@ -88,12 +88,12 @@ def main():
             response = ChatBot_output(chroma_path="./test").RAG_output(query_text=query)
             st.session_state.responses.append(response)
 
-        for query, response in zip(st.session_state.queries, st.session_state.responses):
-            with st.chat_message("user"):
-                st.write(query)
-
-            with st.chat_message("assistant"):
-                st.write(response)
+            for query, response in zip(st.session_state.queries, st.session_state.responses):
+                with st.chat_message("user"):
+                    st.write(query)
+    
+                with st.chat_message("assistant"):
+                    st.write(response)
 
 
     with col2:
