@@ -9,11 +9,12 @@ from chatbot import ChatBot_output
 from data_loading import vectordb
 from streamlit_pdf_reader import pdf_reader
 
-
+# frountend
 def main():
 
     st.set_page_config(layout="wide")
 
+    # about me 
     with st.sidebar:
         st.header("About")
         st.write("""
@@ -47,9 +48,9 @@ def main():
         st.write(html_write_temp, unsafe_allow_html=True)
 
         
-
+        # upload pdf file
         pdf_file = st.file_uploader("upload PDF file", type="pdf")
-        
+        # read and convert text into vectorDB
         with st.spinner("pdf to vector..."):
             if pdf_file:
                 #pdf_reader(pdf_file)
@@ -88,6 +89,7 @@ def main():
             response = ChatBot_output(chroma_path=chroma_db_name).RAG_output(query_text=query)
             st.session_state.responses.append(response)
 
+            # sequential display of query with answer
             for query, response in zip(st.session_state.queries, st.session_state.responses):
                 with st.chat_message("user"):
                     st.write(query)
@@ -95,7 +97,7 @@ def main():
                 with st.chat_message("assistant"):
                     st.write(response)
 
-
+    # display pdf
     with col2:
         if pdf_file:
             pdf_reader(pdf_file)
