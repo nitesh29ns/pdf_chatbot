@@ -80,7 +80,7 @@ def main():
         if query:
             st.session_state.queries.append(query)
 
-            response = ChatBot_output(chroma_path="./test").RAG_output(query_text=query)
+            response = ChatBot_output(chroma_path=chroma_db_name).RAG_output(query_text=query)
             st.session_state.responses.append(response)
 
             for query, response in zip(st.session_state.queries, st.session_state.responses):
