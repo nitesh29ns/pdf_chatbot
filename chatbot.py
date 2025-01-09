@@ -2,6 +2,7 @@ from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from data_loading import get_embedding_funcation
+import streamlit as st
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
