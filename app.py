@@ -9,6 +9,10 @@ from chatbot import ChatBot_output
 from data_loading import vectordb
 from streamlit_pdf_reader import pdf_reader
 
+
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
+
 # frountend
 def main():
 
