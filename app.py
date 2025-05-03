@@ -22,7 +22,7 @@ def main():
     with st.sidebar:
         st.header("About")
         st.write("""
-            My Name is Nitesh Sharma. I am using llama-3.1-70b-versatile model.
+            My Name is Nitesh Sharma. I am using llama-3.3-70b-versatile model.
             ***
             github :- https://github.com/nitesh29ns/pdf_chatbot
                 
