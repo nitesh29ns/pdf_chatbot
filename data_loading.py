@@ -7,10 +7,9 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from uuid import uuid4
 import streamlit as st
-NOMIC_API_KEY = st.secrets.NORMIC_API_KEY
 
-if not NOMIC_API_KEY:
-    raise RuntimeError("NOMIC_API_KEY is not set")
+if "NOMIC_API_KEY" in st.secrets:
+    os.environ["NOMIC_API_KEY"] = st.secrets["NOMIC_API_KEY"]
 
 # using nomic embeddings
 def get_embedding_funcation():
