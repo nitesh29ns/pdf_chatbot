@@ -6,8 +6,8 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from uuid import uuid4
-
-NOMIC_API_KEY = os.environ.get("NOMIC_API_KEY")
+import streamlt as st
+NOMIC_API_KEY = st.secrets.NORMIC_API_KEY
 
 if not NOMIC_API_KEY:
     raise RuntimeError("NOMIC_API_KEY is not set")
