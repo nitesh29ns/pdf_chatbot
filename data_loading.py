@@ -3,12 +3,14 @@ import os
   # os.environ["NOMIC_API_KEY"] = "nk-2qWDlRSfhpW2XxhDackPfJxBMJwVfFoxx_Hy-ae5dxE"
 import streamlit as st
 if "NOMIC_API_KEY" in st.secrets:
-    os.environ["NOMIC_API_KEY"] = st.secrets["NOMIC_API_KEY"]
+    os.environ["NOMIC_API_KEY"] = st.secrets["NOMIC_API_KEY "]
 from langchain_nomic import NomicEmbeddings  
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from uuid import uuid4
+
+st.write("NOMIC_API_KEY exists:", "NOMIC_API_KEY" in os.environ)
 
 # using nomic embeddings
 def get_embedding_funcation():
