@@ -1,6 +1,4 @@
 import os
-# if not os.environ.get("NOMIC_API_KEY"):
-  # os.environ["NOMIC_API_KEY"] = "nk-2qWDlRSfhpW2XxhDackPfJxBMJwVfFoxx_Hy-ae5dxE"
 import streamlit as st
 if "NOMIC_API_KEY" in st.secrets:
     os.environ["NOMIC_API_KEY"] = st.secrets["NOMIC_API_KEY"]
