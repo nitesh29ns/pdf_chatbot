@@ -6,7 +6,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from uuid import uuid4
-import streamlt as st
+import streamlit as st
 NOMIC_API_KEY = st.secrets.NORMIC_API_KEY
 
 if not NOMIC_API_KEY:
